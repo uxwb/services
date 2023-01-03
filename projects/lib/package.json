@@ -1,0 +1,30 @@
+{
+  "name": "@uxwb/services",
+  "version": "0.1.2",
+  "description": "Services for Angular",
+  "author": "@uxwb <uxwb@dewep.pro> (https://github.com/deweppro)",
+  "license": "BSD-3-Clause",
+  "homepage": "https://uxwb.ru",
+  "funding": "https://sobe.ru/na/X2R2S0s9u1d8",
+  "bugs": {
+    "url": "https://github.com/uxwb/services/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uxwb/services.git"
+  },
+  "keywords": [
+    "angular2",
+    "services",
+    "ajax",
+    "websocket"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^14.0.0",
+    "@angular/core": "^14.0.0",
+    "rxjs": "~7.5.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}

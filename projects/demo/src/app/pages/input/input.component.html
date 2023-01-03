@@ -1,0 +1,18 @@
+<div class="code m-5 uxwb-block uxwb-block__title">
+    {{ code }}
+</div>
+
+<div class="row m-5">
+
+    <div class="col-6 demo-in uxwb-block uxwb-block__title">
+        <uxwb-input
+                [title]="'Example:'"
+                [data]="'123'"
+                (event)="do($event)"
+        ></uxwb-input>
+    </div>
+    <div class="col-6 demo-out uxwb-block uxwb-block__title">
+        <div>value: {{item}}</div>
+    </div>
+
+</div>
