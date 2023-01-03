@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "ng": "ng",
-    "start": "ng serve demo --watch --verbose",
+    "start": "ng serve demo --watch",
     "build": "ng build lib",
     "watch": "ng build lib --watch",
     "lint": "ng lint lib --fix"

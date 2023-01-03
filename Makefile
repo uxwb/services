@@ -18,6 +18,8 @@ release_fix: lint patch build publish
 
 release_component: lint minor build publish
 
+release_current: lint build publish
+
 ######################################################################
 
 lint:
@@ -27,13 +29,13 @@ build:
 	yarn run build
 
 patch:
-	cd projects/lib && yarn version patch
+	cd projects/lib && yarn version --patch --no-git-tag-version --no-commit-hooks
 
 minor:
-	cd projects/lib && yarn version minor
+	cd projects/lib && yarn version --minor --no-git-tag-version --no-commit-hooks
 
 major:
-	cd projects/lib && yarn version major
+	cd projects/lib && yarn version --major --no-git-tag-version --no-commit-hooks
 
 publish:
 	cd dist/lib && yarn pack
