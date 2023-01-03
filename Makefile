@@ -26,7 +26,7 @@ lint:
 	yarn run lint
 
 build:
-	yarn run build
+	yarn run build && cp ./projects/lib/README.md ./README.md
 
 patch:
 	cd projects/lib && yarn version --patch --no-git-tag-version --no-commit-hooks
@@ -38,8 +38,7 @@ major:
 	cd projects/lib && yarn version --major --no-git-tag-version --no-commit-hooks
 
 publish:
-	cd dist/lib && yarn pack
-#    		yarn publish --access public
+	cd dist/lib && yarn pack && yarn publish --access public
 
 
 
